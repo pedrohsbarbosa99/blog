@@ -5,7 +5,8 @@ tags: keyboard,hobby
 
 # My Journey in Custom Keyboards
 
-![Corne](../static/images/corne.jpeg)
+![Corne](/blog/static/images/corne.jpeg)
+
 
 
 ## Motivation
