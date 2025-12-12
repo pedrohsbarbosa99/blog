@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pedro Barbosa</title><link>https://pedrohsbarbosa99.github.io/blog</link><description>print(&quot;Hello, World!&quot;)</description><pubDate>Mon, 28 Apr 2025 00:00:00 GMT</pubDate><lastBuildDate>Fri, 12 Dec 2025 17:11:26 GMT</lastBuildDate><generator>marmite</generator><item><title>Special Params</title><link>https://pedrohsbarbosa99.github.io/blog/special-params.html</link><category>python</category><category>ti</category><guid>https://pedrohsbarbosa99.github.io/blog/special-params.html</guid><pubDate>Mon, 28 Apr 2025 00:00:00 GMT</pubDate><source url="https://pedrohsbarbosa99.github.io/blog">tag-python</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>By default, python accepts either position or explicity keywords arguments.</p>
+<p>When you want restrict a positional or keyword argument only, you must pass <code>/</code> for positional only or <code>*</code> for keyword only.</p>
+<p>Positional Argument Only:</p>
+<pre><code class="language-python">def func(pos1, /):
+    print(pos1)
+
+## -------------- ##
+Argument: func(&quot;pos1&quot;)
+Result: pos1
+
+## -------------- ##
+Argument: func(pos1=&quot;pos1&quot;)
+Result: Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: func() missing 1 required positional argument: 'pos1'
+</code></pre>
+<p>KeyWord Argument Only:</p>
+<pre><code class="language-python">def func(*, kwd1):
+    print(kwd1)
+
+## -------------- ##
+Argument: func(&quot;pos1&quot;, kwd1=&quot;kwd1&quot;)
+Result: pos1 kwd1
+
+## -------------- ##
+Argument: func(&quot;pos1&quot;, &quot;kwd1&quot;)
+Result: Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: func() takes 1 positional argument but 2 were given
+</code></pre>
+<p>In summary, you use can use postional only argument to make name of argument not available for users and keyword only to make the argument more understandable by being explicit with names or don't allow the users trust in position of argument.</p>
+<p>For more information, check out:</p>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/controlflow.html#positional-or-keyword-arguments" target="_blank">Python Doc</a></li>
+</ul>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item></channel></rss>

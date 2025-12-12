@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pedro Barbosa</title><link>https://pedrohsbarbosa99.github.io/blog</link><description>print(&quot;Hello, World!&quot;)</description><pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate><lastBuildDate>Fri, 12 Dec 2025 17:11:26 GMT</lastBuildDate><generator>marmite</generator><item><title>My Journey in Custom Keyboards</title><link>https://pedrohsbarbosa99.github.io/blog/open-source-keyboard.html</link><category>keyboard</category><category>hobby</category><guid>https://pedrohsbarbosa99.github.io/blog/open-source-keyboard.html</guid><pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate><source url="https://pedrohsbarbosa99.github.io/blog">archive-2025</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<h2><a href="#motivation" aria-hidden="true" class="anchor" id="motivation"></a>Motivation</h2>
+<p>Around two years ago, I discovered the world of custom keyboards. In Brazil, however, they are not easily accessible, so I first tried to customize a commercial keyboard. Unsurprisingly, customization was extremely limited due to its closed-source firmware. That’s when I decided to build my own keyboard from scratch.</p>
+<h2><a href="#choosing-the-corne" aria-hidden="true" class="anchor" id="choosing-the-corne"></a>Choosing The Corne</h2>
+<p>I chose the Corne keyboard because it is well-documented and beginner-friendly. Being an open-source split keyboard, it allowed me to fully customize the layout, keymap, and firmware, which was exactly what I was looking for.</p>
+<h2><a href="#building-challenges" aria-hidden="true" class="anchor" id="building-challenges"></a>Building Challenges</h2>
+<p>Building my first keyboard was far from easy. I had never worked with electronics before, and using a soldering iron for the first time was intimidating. I made several mistakes, such as misplacing switches and struggling with soldering pads, but each failure taught me something new.</p>
+<h2><a href="#first-success" aria-hidden="true" class="anchor" id="first-success"></a>First Success</h2>
+<p>After many attempts and setbacks, I finally completed my first keyboard. The feeling was indescribable—I had a fully functional, unique keyboard that I built myself.</p>
+<h2><a href="#customization-and-workflow" aria-hidden="true" class="anchor" id="customization-and-workflow"></a>Customization and Workflow</h2>
+<p>I customized the keymap specifically for Python programming. This reduced unnecessary finger movement when typing symbols and numbers, making coding much more comfortable and efficient. I also explored layers and macros, which significantly improved my workflow.</p>
+<h2><a href="#conclusion" aria-hidden="true" class="anchor" id="conclusion"></a>Conclusion</h2>
+<p>Through this project, I learned not only how keyboards are built, but also how their firmware works. The experience taught me patience, problem-solving, and the joy of creating something truly personalized.</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Special Params</title><link>https://pedrohsbarbosa99.github.io/blog/special-params.html</link><category>python</category><category>ti</category><guid>https://pedrohsbarbosa99.github.io/blog/special-params.html</guid><pubDate>Mon, 28 Apr 2025 00:00:00 GMT</pubDate><source url="https://pedrohsbarbosa99.github.io/blog">archive-2025</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>By default, python accepts either position or explicity keywords arguments.</p>
+<p>When you want restrict a positional or keyword argument only, you must pass <code>/</code> for positional only or <code>*</code> for keyword only.</p>
+<p>Positional Argument Only:</p>
+<pre><code class="language-python">def func(pos1, /):
+    print(pos1)
+
+## -------------- ##
+Argument: func(&quot;pos1&quot;)
+Result: pos1
+
+## -------------- ##
+Argument: func(pos1=&quot;pos1&quot;)
+Result: Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: func() missing 1 required positional argument: 'pos1'
+</code></pre>
+<p>KeyWord Argument Only:</p>
+<pre><code class="language-python">def func(*, kwd1):
+    print(kwd1)
+
+## -------------- ##
+Argument: func(&quot;pos1&quot;, kwd1=&quot;kwd1&quot;)
+Result: pos1 kwd1
+
+## -------------- ##
+Argument: func(&quot;pos1&quot;, &quot;kwd1&quot;)
+Result: Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: func() takes 1 positional argument but 2 were given
+</code></pre>
+<p>In summary, you use can use postional only argument to make name of argument not available for users and keyword only to make the argument more understandable by being explicit with names or don't allow the users trust in position of argument.</p>
+<p>For more information, check out:</p>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/controlflow.html#positional-or-keyword-arguments" target="_blank">Python Doc</a></li>
+</ul>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item></channel></rss>
