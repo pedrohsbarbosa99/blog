@@ -5,6 +5,9 @@ tags: keyboard,hobby
 
 # My Journey in Custom Keyboards
 
+![Corne](../static/images/corne.jpeg)
+
+
 ## Motivation
 Around two years ago, I discovered the world of custom keyboards. In Brazil, however, they are not easily accessible, so I first tried to customize a commercial keyboard. Unsurprisingly, customization was extremely limited due to its closed-source firmware. That’s when I decided to build my own keyboard from scratch.
 
